@@ -108,14 +108,7 @@ footer{
     font-weight: bold;
 }
 
-/* BAKGRUNDSBILD */
-.hero-background {
-    background-image: url('https://www.wien.info/resource/image/291116/Video-Header/1920/1080/e7b519ddd2aa033d1135f1fc27315eb9/E70F5910B9026B5DA5365350E447B309/41993-das-loft-sofitel-so-vienna.webp');
-    background-size: cover;
-    background-position: center;
-    padding-top: 70px; /* plats för navbar */
-    min-height: 100vh;
-}
+
 
 /* GRID för rätter */
 .menu-grid {
