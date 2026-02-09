@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini AI Pro</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gemini AI Pro</h1>
+            <p>Skicka avancerade prompts direkt till Gemini-modellen och få svar snabbt.</p>
+        </header>
+
+        <main>
+            <textarea id="promptInput" placeholder="Skriv din prompt här..."></textarea>
+            <div class="button-container">
+                <button onclick="sendToGemini()">Skicka prompt</button>
+            </div>
+            <div id="responseBox">Svar från AI kommer här...</div>
+
+            <section id="historySection">
+                <h2>Historik</h2>
+                <ul id="historyList"></ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Byggd av Tem Brun Retur Olsson och Google Gemini API</p>
+        </footer>
+    </div>
+    <script src="jav.js"></script>
+</body>
+</html>

@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.Rotate{
+    transform: rotate(180deg);
+}
+
 .profile{
     border-radius: 50%;
     height: 40px;

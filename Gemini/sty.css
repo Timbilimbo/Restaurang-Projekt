@@ -1,0 +1,108 @@
+/* style.css — Professionell design för Gemini AI */
+
+:root {
+    --bg-color: #0f1118;
+    --card-bg: #1c1f29;
+    --accent: #3b82f6;
+    --text-color: #e0e7ff;
+    --border-radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeIn 0.8s ease;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    background-color: #12151f;
+    border: 2px solid #2c2f3b;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    font-size: 16px;
+    color: var(--text-color);
+    resize: vertical;
+    transition: 0.2s;
+}
+
+textarea:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: var(--accent);
+    border: none;
+    padding: 14px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+#responseBox {
+    background-color: #12151f;
+    border: 2px solid #2c2f3b;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    min-height: 120px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

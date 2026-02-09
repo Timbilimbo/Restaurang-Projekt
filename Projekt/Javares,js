@@ -1,0 +1,31 @@
+let likes = 0;
+
+function like() {
+    likes = likes + 1;
+    document.getElementById("likes").innerText = "Likes " + likes;
+}
+
+function dislike() {
+    if (likes > 0) {
+        likes = likes -1;   
+    }
+    document.getElementById("likes").innerText = "Likes " + likes;
+}
+
+
+let textComment = inputElement.value;
+let newComment = document.createElement("p");
+newComment.textContent = textComment;
+
+
+let newComments = document.createElement("p");
+document.querySelector("#comments").appendChild(newComments)
+
+
+/*
+document.querySelector("#comments")
+.appendChild(newComment);
+
+let newThing=document.createElement("p")
+document.querySelector("#comments").appendChild(newThing)
+*/
