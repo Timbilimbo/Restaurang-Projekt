@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bank</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <h1>Bank</h1>
+
+  <div class="box">
+    <h2>Kunder</h2>
+    <ul id="lista"></ul>
+  </div>
+
+  <div class="box">
+    <h2>Skapa kund</h2>
+    <input id="namn" type="text" placeholder="Namn" />
+    <input id="saldo" type="number" placeholder="Startsaldo" />
+    <button id="skapa">Skapa</button>
+  </div>
+
+  <div class="box">
+    <h2>Välj kund</h2>
+    <select id="valdkund"></select>
+    <button id="radera">Radera</button>
+  </div>
+
+  <div class="box">
+    <h2>Insättning / Uttag</h2>
+    <input id="belopp" type="number" placeholder="Belopp" />
+    <button id="insatt">Sätt in</button>
+    <button id="ut">Ta ut</button>
+  </div>
+
+  <div class="box">
+    <h2>Överför</h2>
+    <input id="belopp2" type="number" placeholder="Belopp" />
+    <select id="till"></select>
+    <button id="overfor">Överför</button>
+  </div>
+
+  <script src="java_f.js"></script>
+</body>
+</html>

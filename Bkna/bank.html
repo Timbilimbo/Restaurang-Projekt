@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fiktiv bank</title>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <h1>Bankhantering</h1>
+      <p class="lead">Hantera kunder, saldo, insättningar, uttag och överföringar.</p>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label">Kunder</div>
+        <div id="statCustomers" class="stat-value">0</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Totalt saldo</div>
+        <div id="statTotal" class="stat-value">0 kr</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Kunder</h2>
+      <div class="controls">
+        <input id="searchInput" type="text" placeholder="Sök kund" />
+        <select id="sortSelect">
+          <option value="name">Sortera: Namn</option>
+          <option value="balance">Sortera: Saldo</option>
+        </select>
+      </div>
+      <ul id="customerList" class="list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Hantera</h2>
+
+      <div class="panel">
+        <div class="muted">Vald kund</div>
+        <div id="selectedName" class="selected-name">Ingen vald</div>
+        <div id="selectedBalance" class="selected-balance">0 kr</div>
+        <button id="deleteBtn" class="danger">Radera kund</button>
+      </div>
+
+      <div class="panel">
+        <h3>Skapa kund</h3>
+        <div class="row">
+          <input id="newName" type="text" placeholder="Namn" />
+          <input id="newBalance" type="number" placeholder="Startsaldo" />
+          <button id="addBtn" class="primary">Skapa</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Insättning / Uttag</h3>
+        <div class="row">
+          <input id="amount" type="number" placeholder="Belopp" />
+          <button id="depositBtn" class="primary">Sätt in</button>
+          <button id="withdrawBtn">Ta ut</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Överför</h3>
+        <div class="row">
+          <input id="transferAmount" type="number" placeholder="Belopp" />
+          <select id="transferTo"></select>
+          <button id="transferBtn" class="primary">Överför</button>
+        </div>
+      </div>
+
+      <div id="message" class="message" aria-live="polite"></div>
+    </section>
+
+    <section class="card full">
+      <h2>Transaktioner</h2>
+      <div class="muted">Senaste händelser för vald kund.</div>
+      <ul id="txList" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="java.js"></script>
+</body>
+</html>
